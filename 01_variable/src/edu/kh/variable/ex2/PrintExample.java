@@ -80,6 +80,9 @@ public class PrintExample {
 		
 		// 유니코드 이스케이프
 		System.out.println("\u0041");
+		// 유니코드 (16진수)
+		// 65를 16진수로 표현 
+		// 65나누기 15 몫 4 , 나머지1
 		
 		
 		
