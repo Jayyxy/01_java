@@ -1,4 +1,4 @@
-package edu.kh.basic;
+package edu.kh.variable.ex1;
 
 public class VariableExample4 {
 	public static void main(String[] args) {
