@@ -1,24 +1,28 @@
+
 package edu.kh.array.practice.run;
 
 import edu.kh.array.practice.service.PracticeService;
-
 //기능 실행
-
 public class PracticeRun {
 
 	public static void main(String[] args) {
-		PracticeService practicesv= new PracticeService();
-		
-		//practicesv.practice1();
-		//practicesv.practice2();
-		//practicesv.practice3();
-		//practicesv.practice4();
-		//practicesv.practice5();
-		//practicesv.practice6();
-		practicesv.practice7();
-		
-		
-		
+		PracticeService ps = new PracticeService();
+		//ps.practice1();
+		//ps.practice2();
+		//ps.practice3();
+		//ps.practice4();
+		//ps.practice5();
+		//ps.practice6();
+		//ps.practice7();
+		//ps.practice8();
+		//ps.practice9();
+		//ps.practice10();
+		//ps.practice11();
+		//ps.practice12();
+		//ps.practice13();
+		ps.practice14();
+
+
 	}
 
 }

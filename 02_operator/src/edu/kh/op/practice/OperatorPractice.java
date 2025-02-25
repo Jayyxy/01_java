@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class OperatorPractice {
 //기능제공클래스
-	
+//package edu.kh.op.practice.run.PracticeRun 에서 실	
 	
 	public void practice1() {
 		
@@ -26,17 +26,23 @@ public class OperatorPractice {
 
 	 * 
 	 * */
+		//입력이 필요?? => Scanner 사용
+		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.printf("인원 수: " );
-		int input00= sc.nextInt();
+		System.out.printf("인원 수: " ); //문자열은 쌍따옴 " " 사 
+		int input1= sc.nextInt();
 		
 		System.out.printf("사탕 개수: " );
-		int input01= sc.nextInt();
+		int input2= sc.nextInt();
 		
-		System.out.printf("1인당사탕개수: %d \n남는사탕개수: %d\n", input01/input00,input01%input00);
+		System.out.printf("1인당사탕개수: %d \n남는사탕개수: %d\n", input2/input1,input2%input1);
 		//뒤에 연습문제로 한줄 띄우기
 	}
+	
+	
+	
+	
 		public void practice2(){
 
 
@@ -45,6 +51,8 @@ public class OperatorPractice {
 		 * 메소드명: publicvoid practice2(){}
 			키보드로입력받은값들을변수에기록하고
 			저장된변수값을화면에출력하여확인하세요.
+			
+			
  			ex.이름: 홍길동
  			학년(정수만) : 3
  			반(정수만) : 4
@@ -55,31 +63,32 @@ public class OperatorPractice {
  			[출력화면]
  			3학년4반15번홍길동남학생의성적은85.75이다.
 		 */
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.print("이름 : ");
+			String name = sc.next();
+			
+			System.out.print("학년 : ");
+			int grade = sc.nextInt();
+			
+			System.out.print("반 : ");
+			int classroom = sc.nextInt();
+			
+			System.out.print("번호 : ");
+			int number = sc.nextInt();
+			
+			sc.nextLine(); // 입력버퍼 비우는 일(개행문자 비우기)
+			
+			System.out.print("성별(남학생/여학생) : ");
+			String gender = sc.nextLine();
+			
+			System.out.print("성적 : ");
+			double score = sc.nextDouble();
+			
 		
-		Scanner sc = new Scanner(System.in);
 		
-		System.out.printf("이름: ");
-		String input001 = sc.next();
-		
-		System.out.printf("학년: ");
-		int input002 = sc.nextInt();
-		
-		System.out.printf("반: ");
-		int input003 = sc.nextInt();
-		
-		System.out.printf("번호: ");
-		int input004 = sc.nextInt();
-		
-		sc.nextLine();
-		
-		System.out.printf("성별: ");
-		String input005 = sc.nextLine();
-		
-		System.out.printf("성적: ");
-		double input006 = sc.nextFloat();
-		
-		
-		System.out.printf("%d학년%d반%d번%s%s의성적은%f이다.\n",input002,input003,input004,input001,input005,input006);
+		System.out.printf("%d학년 %d반 %d번 %s %s의 성적은 %.2f이다.\n", 
+					grade, classroom, number, name, gender, score);
 		
 		
 	
@@ -115,5 +124,6 @@ public class OperatorPractice {
 			System.out.printf("합계: %d \n 평균: %d\n",input1+input2+input3,(input1+input2+input3)/3);
 			
 		 }
-
+		
+	
 }

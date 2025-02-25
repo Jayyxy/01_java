@@ -1,7 +1,10 @@
 package edu.kh.variable.ex1;
 
 public class VariableExample1 {
-//생성된 .java파일과 class 오른쪽에 작성된 클래스명(이름)은 같아야한다 
+//생성된 .java파일과 class 오른쪽에 작성된 클래스명(이름)은 같아야한다. 
+	
+	
+	
 //F2로 클래스 이름 변경 가능
 	public static void main(String[] args) {
 		System.out.println(2*3.141592653589793*5);//원의 둘레

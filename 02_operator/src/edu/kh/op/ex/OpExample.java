@@ -2,16 +2,11 @@ package edu.kh.op.ex;
 
 import java.util.Scanner;
 
-//수업에서 실행용 class랑 예제코드 클래스가 있음
-//해당 클래스는 예제 코드 작성 클래스
-//메인 메서드 실행용 클래스는 ExampleRun에 있음
-
-
 //예제코드 작성용 클래스 (기능용/메서드용)
 
 public class OpExample {
 
-	// ex() method : OpExample 이라는 클래스에 포함된 메서드 
+	// ex1() method : OpExample 이라는 클래스에 포함된 메서드 
 	public void ex1() { 
 		System.out.println("ex1() 호출됨");
 		
@@ -56,13 +51,13 @@ public class OpExample {
 			int a=10;
 			int b=20;
 			
-			System.out.println((a==b)==false);
+			System.out.println( (a==b) == false );
 			// (false) == false -> true
 		
 		int c =4;
 		int d =5;
 		
-		System.out.println((++c !=d) == (--c != d));
+		System.out.println((++c !=d) == (--c != d) );
 		//					 ++4(5) !=5 -> flase
 		//									--5(4) != 5 ->true		
 		//  					false == true  -> false 
@@ -133,12 +128,12 @@ public class OpExample {
 			
 			Scanner sc = new Scanner(System.in);
 			
-			System.out.printf("입력된 정수: ");
-			int input1= sc.nextInt();
+			System.out.print("정수 입력 : ");
+			int input = sc.nextInt();
 			
-			String result2 = input1 > 0 ? "양수입니다.":"음수입니다."; 
+			String result2 = input >= 0 ? "양수 입니다." : "음수 입니다.";
 			System.out.println(result2);
-					
+			
 			
 			
 			
